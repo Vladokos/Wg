@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="wrapper">
 
     <header class="header">
         <div class="container">
@@ -27,7 +27,7 @@
             </div>
         </div>
     </header>
-    <section class="form">
+    <section class="form lock-padding">
         <div class="container">
             <div class="form-inner">
                 <div class="zip-form _anim-items _anim-no-hide">
@@ -37,7 +37,7 @@
                         This is Photoshop's version of Lorem Ipsum.
                     </div>
                     <div class="btn">
-                        <a href="" class="zip-form__btn-send">PRESS ME</a>
+                        <a href="#popup" class="zip-form__btn-send popup-link">PRESS ME</a>
                     </div>
                 </div>
             </div>
@@ -161,7 +161,21 @@
 
 
 
-
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="##" class="popup__close close-popup ">X</a>
+                <div class="popup__title">
+                    Это модальное окно №1
+                </div>
+                <div class="popup__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur repellat ab error placeat velit
+                    dolores magni, animi in recusandae veritatis porro? Consequatur illo velit nisi id iure cum quisquam
+                    impedit.
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="js/script.js" defer></script>
