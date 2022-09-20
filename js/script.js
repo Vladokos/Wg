@@ -1,4 +1,5 @@
 "use strict";
+
 //scroll
 const animItems = document.querySelectorAll('._anim-items');
 
