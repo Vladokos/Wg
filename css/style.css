@@ -19,7 +19,8 @@ body.lock {
 }
 
 .head-top__logo {
-  margin: 0 40% 78px;
+  text-align: center;
+  margin-bottom: 78px;
   transform: translate(0, -120%);
   opacity: 0;
   transition: all 0.8s ease 0s;
@@ -35,7 +36,7 @@ body.lock {
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
-  width: 675px;
+  max-width: 675px;
   opacity: 0;
 }
 .head-top__title._active {
@@ -47,9 +48,12 @@ body.lock {
 }
 
 .form {
-  padding-bottom: 51px;
+  padding-bottom: 112px;
 }
 .form-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .zip-form {
@@ -58,7 +62,6 @@ body.lock {
   position: absolute;
   width: 334px;
   height: 334px;
-  transform: translate(452px, -214px);
   border-radius: 2px;
 
   opacity: 0;
@@ -80,7 +83,7 @@ body.lock {
   color: #b4adad;
 }
 .zip-form__subtitle {
-  width: 221px;
+  max-width: 221px;
   margin: 27px auto;
   color: #938e8e;
 }
@@ -108,6 +111,7 @@ body.lock {
 }
 .inform-phohto__items {
   display: flex;
+  justify-content: space-between;
   opacity: 0;
   transform: translate(0, 120%);
 }
@@ -121,7 +125,6 @@ body.lock {
 }
 .inform-phohto__item {
   display: flex;
-  margin: 0 17% 0 0;
 }
 .img__item {
   height: 127px;
@@ -133,8 +136,9 @@ body.lock {
   font-weight: 600;
 }
 .inform-phohto__descr {
+  text-align: justify;
   color: #4f4e4e;
-  width: 315px;
+  max-width: 315px;
   line-height: 23px;
 }
 
@@ -151,6 +155,7 @@ body.lock {
 
 .img-info {
   height: 0;
+  width: 0;
   transform: translateX(205px);
 
   transition: all 0.8s ease-in 0s;
@@ -200,9 +205,10 @@ body.lock {
 }
 
 .infromOne {
-  font-size: 14px;
+  text-align: justify;
+  font-size: 18px;
   line-height: 1.64;
-  width: 652px;
+  max-width: 652px;
   margin: 0 auto;
 }
 
@@ -240,9 +246,9 @@ body.lock {
 }
 
 .infromTwo {
+  font-size: 17px;
   text-align: justify;
   margin-bottom: 20px;
-  font-size: 14px;
   line-height: 1.64;
   opacity: 0;
   transform: translate(0, 120%);
@@ -327,7 +333,7 @@ body.lock {
   height: 80px;
   margin-bottom: 33px;
   border: solid 1px #d8d8d8;
-  padding-left: 8px;
+  padding-left: 16px;
 }
 .Copyright {
   background-color: #43a06d;
@@ -384,6 +390,7 @@ body.lock {
   transform: perspective(600px) translate(0px, -100%) rotateX(35deg);
 }
 .popup__close {
+  font-weight: bold;
   position: absolute;
   right: 10px;
   top: 10px;
@@ -395,5 +402,12 @@ body.lock {
   font-size: 40px;
   margin: 0 0 1em 0;
 }
-.popup__text {
+
+
+@media (max-width:1000px) {
+  .inform-phohto__items{
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+  }
 }
