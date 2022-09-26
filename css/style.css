@@ -112,10 +112,8 @@ body.lock {
 .inform-phohto__items {
   display: flex;
   justify-content: space-between;
-  opacity: 0;
-  transform: translate(0, 120%);
 }
-.inform-phohto__items._active {
+.inform-phohto__items._active .inform-phohto__item {
   transition: all 1s ease 0s;
   opacity: 1;
   transform: translate(0, 0);
@@ -125,6 +123,8 @@ body.lock {
 }
 .inform-phohto__item {
   display: flex;
+  opacity: 0;
+  transform: translate(0, 120%);
 }
 .img__item {
   height: 127px;
@@ -185,23 +185,24 @@ body.lock {
   transform: translate(0, 0);
 }
 
-.infromOneP {
+.infromOneP div {
   display: block;
   opacity: 0;
   transform: translate(0, 160%);
   transition: all 0.8s ease-in 0s;
 }
-.infromOneP._active {
+.infromOneP._active div {
   opacity: 1;
   transform: translate(0, 0);
 }
 
-.infromOneT {
+.infromOneT div {
   opacity: 0;
   transform: translate(0, 180%);
   transition: all 0.8s ease-in 0.2s;
 }
-.infromOneT._active {
+
+.infromOneT._active div {
   opacity: 1;
   transform: translate(0, 0);
 }
@@ -252,11 +253,13 @@ body.lock {
   text-align: justify;
   margin-bottom: 20px;
   line-height: 1.64;
+}
+.infromTwo div {
   opacity: 0;
   transform: translate(0, 120%);
   transition: all 0.8s ease-in 0s;
 }
-.infromTwo._active {
+.infromTwo._active div {
   opacity: 1;
   transform: translate(0, 0);
 }
